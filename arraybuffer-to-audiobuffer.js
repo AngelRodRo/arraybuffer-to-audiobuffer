@@ -2,7 +2,7 @@
   'use strict';
 
   function arrayBufferToAudioBuffer(arrayBuffer, context) {
-    return new Promise((resolve, reject) => {
+    return new Promise(function (resolve, reject) {
       if (context) {
         if (Object.prototype.toString.call(context) !==
             '[object AudioContext]') {
